@@ -1,0 +1,248 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+%section settings
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+
+%\titleformat{\section}{
+%  \vspace{-8pt}\scshape\raggedright\large
+%}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & {\small #2} \\
+      \textit{\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.0\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & {\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    {\Huge \scshape Subhash C. Kantamneni} \\ \vspace{1pt}
+    \small \href{mailto:subhashk@mit.edu}{\raisebox{-0.2\height}\faEnvelope\  \underline{subhashk@mit.edu}} ~
+    \href{https://subhashk.com/}{\raisebox{-0.2\height}\faBookmark\ \underline{subhashk.com}}  ~
+    \href{https://subhashk.com/}{\raisebox{-0.2\height}\faLinkedin\ \underline{sckant}}  ~
+    \href{https://github.com/subhashk0}{\raisebox{-0.2\height}\faGithub\ \underline{subhashk01}}
+    \vspace{-8pt}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {MIT Sloan School of Management}{2021 -- 2022}
+      {MFin, Financial Engineering}{Cambridge, MA}
+  \resumeSubHeadingListEnd
+  \begin{itemize}
+    \itemsep-5pt
+    \item \textbf{Activities \& Societies:} Quantitative Financial Markets Club, MFin Capital Builders, India Business Club
+    \item \textbf{Courses:} 15.470 Asset Pricing, 15.085 Probability, 15.433 Financial Markets, 15.458 Financial Data Science
+  \end{itemize}
+
+\vspace{-16pt}
+
+  \resumeSubHeadingListStart
+    \resumeSubheading
+	  {Massachusetts Institute of Technology (MIT)}{2018 -- 2021}
+	  {SB, Mathematics with Computer Science (Minor: Finance); GPA: 4.8/5.0}{Cambridge, MA}
+	\resumeSubHeadingListEnd
+	\begin{itemize}[noitemsep]
+		\item \textbf{Activities \& Societies:} MIT Pokerbots, MIT Consulting Group, Phi Kappa Theta Fraternity
+		\item \textbf{Courses:} 15.457 Advanced Analytics of Finance, 15.438 Fixed Income Securities \& Derivatives, 6.046 Algorithms, 18.100Q Real Analysis, 18.650 Statistics, 18.404 Theory of Computation, 18.703 Algebra
+	\end{itemize}
+
+\vspace{-16pt}
+
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Princeton University}{2017 -- 2018}
+      {Dual Enrollment, Mathematics; GPA: 3.7/4.0; Courses: Honors Linear Algebra, Number Theory}{Princeton, NJ}
+  \resumeSubHeadingListEnd
+  
+%\vspace{-16pt}
+
+%-----------WORK EXPERIENCE-----------
+\section{Work Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {DRW}{Jun -- Aug 2021}
+      {Quantitative Trading Analyst Intern}{Greenwich, CT}
+      \resumeItemListStart
+        \resumeItem{\textbf{Project:} Researched signals and trading strategies for US Treasury Options/Futures on the Global Macro Vol desk.}
+        \resumeItem{\textbf{Skills:} Interest rate derivatives, macro trading, backtesting, statistical analysis, technical analysis.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Morgan Stanley}{Jun -- Aug 2020}
+      {Institutional Equity Summer Analyst}{New York, NY}
+      \resumeItemListStart
+        \resumeItem{\textbf{Projects:} Implemented ETF trading strategy and binary classifier for dynamic option Gamma hedging in Python.}
+        \resumeItem{\textbf{Shadowing:} Index Derivatives, Single Name Options, ETFs, and Automated Market Making trading desks.}
+        \resumeItem{\textbf{Skills:} Derivatives pricing, option Greeks, option strategies, and quantitative risk management.}
+    \resumeItemListEnd
+    
+    \resumeSubheading
+      {Seven Eight Capital}{May -- Aug 2019}
+      {Quantitative Developer Intern}{New York, NY}
+      \resumeItemListStart
+        \resumeItem{\textbf{Project:} Built, studied, and evaluated multi-factor asset pricing models for US and European equities.}
+        \resumeItem{\textbf{Skills:} Python (Pandas), data science (regression analysis, model selection, outliers), and BARRA risk models.}
+      \resumeItemListEnd
+    
+  \resumeSubHeadingListEnd
+
+% \vspace{-16pt}
+
+%-----------PROGRAMMING SKILLS-----------
+ \section{Skills \& Interests}
+  \begin{itemize}[leftmargin=0.0in, label={}]
+     \small{\item{
+      \textbf{Typescript} \hspace{0.3in} {Well-trained in creating clean, maintainable code and industry style automated unit testing} {\vspace{0.015in}}\\
+      \textbf{Python} {\hspace{0.588in}}{Utilized extensively for research projects, specifically the Matplotlib, SciPy, and NumPy libraries} \vspace{0.015in}\\
+      \textbf{C} {\hspace{0.945in}} {Created Arduino projects including a self-driving vehicle and a web integrated light-sound alarm clock} \vspace{0.015in}\\
+      \textbf{Other} {\hspace{0.7025in}}{Linux, Command line Git, Bash Scripting, and submitting batch jobs} \\
+     }}
+  \end{itemize}
+
+
+% \vspace{-16pt}
+
+%-----------EXTRACURRICULAR EXPERIENCE---------------
+\section{Extracurricular Experience}
+  \resumeSubHeadingListStart
+  
+    \resumeSubheading
+      {MIT Pokerbots}{Sep 2018 -- Present}
+      {President (2019 - 2021), Sponsorship Director (2018 - 2019)}{Cambridge, MA}
+      \resumeItemListStart
+        \resumeItem{Led team of seven members to successfully run four-week computer poker class and competition for 250 MIT and Harvard undergrad/grad students. Managed operations and developed 2021 game engine.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+% \vspace{-16pt}
+
+%-----------AWARDS-----------
+\section{Awards}
+\begin{itemize}[leftmargin=0.15in, label={}]
+	\small{\item{
+			\textbf{MIT MFin Fellowship} {Awarded in recognition of outstanding academic record, achievements and professional promise.} \\
+			\textbf{Young Naturalist Awards} {Individually top 6 nationwide for high school biology research.} \\
+			\textbf{Olympiads} {2 time AIME qualifier, USACO Gold Division.} \\
+			\textbf{Tournament of Champions} {Two time qualifier in Public Forum Debate (national high school championships).}
+	}}
+\end{itemize}
+
+
+  
+%  \vspace{-16pt}
+
+\end{document}
